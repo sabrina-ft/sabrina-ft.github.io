@@ -168,8 +168,9 @@
 
 <h3 id="4-2-部署自己的第一篇博客"><a href="#4-2-部署自己的第一篇博客" class="headerlink" title="4.2 部署自己的第一篇博客"></a>4.2 部署自己的第一篇博客</h3><ul>
 <li>选择一个markdown编辑器，我使用的是VScode</li>
-<li>在blog文件夹中打开git bash，输入如下命令创建文章，title为文章的标题<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure></li>
-<li>可见创造了一篇新博客</li>
+<li>在blog文件夹中打开git bash，输入如下命令创建文章，title为文章的标题<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;hello-world&quot;</span><br></pre></td></tr></table></figure></li>
+<li>生成了自己的第一个新博客</li>
 </ul>
 <img src="/2022/10/05/Hello-Blog/image7.png" class="" title="images6">
 
@@ -184,7 +185,9 @@
 </ul>
 <img src="/2022/10/05/Hello-Blog/1.png" class="" title="images6">
 
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>出现这问题，当时又重新创建Github Pagea 仓库，部署Hexo到Github Pages弄了好几遍之后出来依旧是那样，并且当时还在bing上查阅了很多资料，试了很多种办法，依旧不行。最后，找问题的着重点放在了branch上，当时我在_config.yml里设置的branch是master,最后将master改为了main。</p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>出现这问题，我尝试了以下方法：</p>
+<p>1.删掉仓库，重新创建Github Pagea 仓库并部署Hexo到Github Pages,这样弄了好几遍;</p>
+<p>2.问题的着重点放在了branch上，当时我在_config.yml里设置的branch是master,最后将master改为了main</p>
 <img src="/2022/10/05/Hello-Blog/image9.png" class="" title="images7">
 
 <img src="/2022/10/05/Hello-Blog/image8.png" class="" title="images8">
@@ -198,7 +201,10 @@
 <p>因此我查了相关资料发现有人和我遇到同样的问题。</p>
 <img src="/2022/10/05/Hello-Blog/image11.png" class="" title="images10">
 
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>  1.<img src="/2022/10/05/Hello-Blog/image12.png" class="" title="images11"><br>  2.改变插件 之前我下载的是hexo-asset-image插件，现在改变为hexo-image-link插件</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>  1.改变图片路径，改变之后只能在VScode的编写下显示有照片，但打开博客依旧没有。</p>
+<p>  2.<img src="/2022/10/05/Hello-Blog/image12.png" class="" title="images11"></p>
+<p>  3.改变插件 之前我下载的是hexo-asset-image插件，现在改变为hexo-image-link插件。</p>
+<p>  最后按照最后两种办法修改成功。</p>
 </li>
 </ul>
 
