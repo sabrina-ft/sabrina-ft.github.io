@@ -13,21 +13,21 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="起因 国庆放假回家，我哥督促我自己搭建blog,然后我上bing查阅了相关资料，开始自己搭建博blog。 个人blog搭建目录一.博客搭建的前提 1.Git  2.Node.js  3.GitHub  二.博客搭建 1.Hexo下载  2.Hexo初始化  3.启动博客  三.部署hexo到git上 1.添加自己用户名及邮箱到git配置中  2.生产SSH密钥  3.密钥添加到github  四.">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/.com//Image2.png">
-<meta property="og:image" content="http://example.com/.com//image3.png">
-<meta property="og:image" content="http://example.com/.com//image4.png">
-<meta property="og:image" content="http://example.com/.com//image5.png">
-<meta property="og:image" content="http://example.com/.com//image6.png">
-<meta property="og:image" content="http://example.com/.com//image7.png">
-<meta property="og:image" content="http://example.com/.com//Image1.png">
-<meta property="og:image" content="http://example.com/.com//image8.png">
-<meta property="og:image" content="http://example.com/.com//image9.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/Image2.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image3.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image4.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image5.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image6.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image7.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/1.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image8.png">
+<meta property="og:image" content="http://example.com/2022/10/05/Hello-Blog/image9.png">
 <meta property="article:published_time" content="2022-10-05T03:47:00.000Z">
-<meta property="article:modified_time" content="2022-10-05T06:39:19.459Z">
+<meta property="article:modified_time" content="2022-10-05T07:17:49.832Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="生活">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/.com//Image2.png">
+<meta name="twitter:image" content="http://example.com/2022/10/05/Hello-Blog/Image2.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -140,7 +140,9 @@
 <h3 id="2-1-Hexo下载"><a href="#2-1-Hexo下载" class="headerlink" title="2.1 Hexo下载"></a>2.1 Hexo下载</h3><ul>
 <li>在你想建成博客目录的盘符创建一个文件夹作为博客的顶级目录</li>
 </ul>
-<p><img src="/.com//Image2.png" alt="images1"></p>
+<img src="/2022/10/05/Hello-Blog/Image2.png" class="" title="images1">
+
+
 <ul>
 <li>打开cmd，进入创建文件夹，输入npm install hexo-cli -g 安装hexo</li>
 </ul>
@@ -148,7 +150,8 @@
 <li>安装完成后，输入hexo init blog进行初始化</li>
 <li>初始化成功后，文件夹下就会有下方形成的目录结构</li>
 </ul>
-<p><img src="/.com//image3.png" alt="images2"></p>
+<img src="/2022/10/05/Hello-Blog/image3.png" class="" title="images2">
+
 <h3 id="2-3-启动博客"><a href="#2-3-启动博客" class="headerlink" title="2.3 启动博客"></a>2.3 启动博客</h3><ul>
 <li>cmd进入到这里，然后输入hexo s -g启动，博客就搭建完成了</li>
 </ul>
@@ -158,12 +161,14 @@
 <h3 id="3-3-密钥添加到github"><a href="#3-3-密钥添加到github" class="headerlink" title="3.3 密钥添加到github"></a>3.3 密钥添加到github</h3><ul>
 <li>打开文件夹，可以在C盘找到该文件，用VScode打开并复制内容</li>
 </ul>
-<p><img src="/.com//image4.png" alt="images3"></p>
+<img src="/2022/10/05/Hello-Blog/image4.png" class="" title="images3">
+
 <ul>
 <li>打开自己github的主页，点击右上角头像，打开setting</li>
 <li>点击New SSH key,添加密钥</li>
 </ul>
-<p><img src="/.com//image5.png" alt="images4"></p>
+<img src="/2022/10/05/Hello-Blog/image5.png" class="" title="images4">
+
 <h3 id="4-创建Github-Pagea-仓库"><a href="#4-创建Github-Pagea-仓库" class="headerlink" title="4 创建Github Pagea 仓库"></a>4 创建Github Pagea 仓库</h3><p> Github主页右上角加号 –&gt;New repository:</p>
 <ul>
 <li>Repository name中输入 用户名.github.io</li>
@@ -174,13 +179,15 @@
 <li>首先安装hexo-deployer-git:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
 <li>打开blog文件夹，找到_config.yml文件，以VScode（任何编译器都行）打开，将deploy的type由github改为git:</li>
 </ul>
-<p><img src="/.com//image6.png" alt="images5"></p>
+<img src="/2022/10/05/Hello-Blog/image6.png" class="" title="images5">
+
 <h3 id="4-2-部署自己的第一篇博客"><a href="#4-2-部署自己的第一篇博客" class="headerlink" title="4.2 部署自己的第一篇博客"></a>4.2 部署自己的第一篇博客</h3><ul>
 <li>选择一个markdown编辑器，我使用的是VScode</li>
 <li>在blog文件夹中打开git bash，输入如下命令创建文章，title为文章的标题<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure></li>
 <li>可见创造了一篇新博客</li>
 </ul>
-<p><img src="/.com//image7.png" alt="images6"></p>
+<img src="/2022/10/05/Hello-Blog/image7.png" class="" title="images6">
+
 <ul>
 <li>用VScode打开即可编辑自己的博客内容，在编写完成后即可以上传到github仓库</li>
 <li>在blog文件夹git bash <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
@@ -188,16 +195,19 @@
 <li>可以访问 https:&#x2F;&#x2F;用户名.github.io&#x2F;查看自己的博客。</li>
 </ul>
 <h3 id="5-1-出现的问题："><a href="#5-1-出现的问题：" class="headerlink" title="5.1 出现的问题："></a>5.1 出现的问题：</h3><p>写完博客之后打开并不是blog，而是github仓库里的Readme文件</p>
-<p><img src="/.com//Image1.png" alt="images6"></p>
+<img src="/2022/10/05/Hello-Blog/1.png" class="" title="images6">
+
 <h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>出现这问题，当时又重新创建Github Pagea 仓库，部署Hexo到Github Pages弄了好几遍之后出来依旧是那样，并且当时还在bing上查阅了很多资料，试了很多种办法，依旧不行。最后，找问题的着重点放在了branch上，当时我在_config.yml里设置的branch是master,最后将master改为了main。</p>
-<p><img src="/.com//image8.png" alt="images7"></p>
-<p><img src="/.com//image9.png" alt="images8"></p>
+<img src="/2022/10/05/Hello-Blog/image8.png" class="" title="images7">
+
+<img src="/2022/10/05/Hello-Blog/image9.png" class="" title="images8">
+
 <p>之后打开正常了。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/05/Hello-Blog/" data-id="cl8v9eds400006oik5uye4y3o" data-title="Hello-Blog" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/10/05/Hello-Blog/" data-id="cl8vasn1s0000qoikamazawb5" data-title="Hello-Blog" class="article-share-link">Share</a>
       
       
       
