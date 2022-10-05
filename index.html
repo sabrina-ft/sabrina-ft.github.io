@@ -154,8 +154,6 @@
 <li>打开自己github的主页，点击右上角头像，打开setting</li>
 <li>点击New SSH key,添加密钥</li>
 </ul>
-<img src="/2022/10/05/Hello-Blog/image5.png" class="" title="images4">
-
 <h3 id="4-创建Github-Pagea-仓库"><a href="#4-创建Github-Pagea-仓库" class="headerlink" title="4 创建Github Pagea 仓库"></a>4 创建Github Pagea 仓库</h3><p> Github主页右上角加号 –&gt;New repository:</p>
 <ul>
 <li>Repository name中输入 用户名.github.io</li>
@@ -181,15 +179,27 @@
 <li>如果在hexo d时显示OpenSSL SSL_read: Connection was aborted, errno 10053错误，可以在git上输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerity &quot;false&quot;</span><br></pre></td></tr></table></figure></li>
 <li>可以访问 https:&#x2F;&#x2F;用户名.github.io&#x2F;查看自己的博客。</li>
 </ul>
-<h3 id="5-1-出现的问题："><a href="#5-1-出现的问题：" class="headerlink" title="5.1 出现的问题："></a>5.1 出现的问题：</h3><p>写完博客之后打开并不是blog，而是github仓库里的Readme文件</p>
+<h3 id="5-1-出现的问题："><a href="#5-1-出现的问题：" class="headerlink" title="5.1 出现的问题："></a>5.1 出现的问题：</h3><ul>
+<li>1.写完博客之后打开并不是blog，而是github仓库里的Readme文件</li>
+</ul>
 <img src="/2022/10/05/Hello-Blog/1.png" class="" title="images6">
 
 <h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>出现这问题，当时又重新创建Github Pagea 仓库，部署Hexo到Github Pages弄了好几遍之后出来依旧是那样，并且当时还在bing上查阅了很多资料，试了很多种办法，依旧不行。最后，找问题的着重点放在了branch上，当时我在_config.yml里设置的branch是master,最后将master改为了main。</p>
-<img src="/2022/10/05/Hello-Blog/image8.png" class="" title="images7">
+<img src="/2022/10/05/Hello-Blog/image9.png" class="" title="images7">
 
-<img src="/2022/10/05/Hello-Blog/image9.png" class="" title="images8">
+<img src="/2022/10/05/Hello-Blog/image8.png" class="" title="images8">
 
 <p>之后打开正常了。</p>
+<ul>
+<li><p>2.写博客上传图片问题</p>
+<p>上传上去的图片在blog页面没有出现，然后查了代码发现图片链接前多了一个.com</p>
+<img src="/2022/10/05/Hello-Blog/image10.png" class="" title="images9">
+
+<p>因此我查了相关资料发现有人和我遇到同样的问题。</p>
+<img src="/2022/10/05/Hello-Blog/image11.png" class="" title="images9">
+
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3></li>
+</ul>
 
       
     </div>
